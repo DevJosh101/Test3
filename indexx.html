@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoshDev</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/cd8c94e8a8.js" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: lightskyblue;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-flex;
+            margin-left: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+
+        }
+
+        ul li a:hover {
+            background-color: blue;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-top: 1px;
+            margin-right: 20px;
+            float: right;
+        }
+
+        .loremm {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .lorem {
+            width: 30%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .this {
+            text-align: center;
+        }
+
+        .like {
+            color: red;
+        }
+
+        .lore {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: white;
+            padding: 10px 0;
+        }
+
+        .icon {
+            text-align: center;
+        }
+
+        .fa-brands {
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        
+    </header>
+    <img class="logo" src="logo.png" alt="Logo">
+    <div class="loremm">
+        <img class="lorem" src="pepsi-coke-can-of-coke-330-ml.png" alt="pepsi can">
+    </div>
+
+    <div class="lore">
+        <h1 class="this">This is What<span class="like"> I LIKE</span></h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita saepe numquam aliquid, minima repellat asperiores consequuntur dolores quam ratione explicabo necessitatibus velit officia quae, unde sit commodi, voluptate voluptas. Blanditiis.</h1>
+        <button onclick="Myfunction()">Dark Mode</button>
+    </div>
+
+    <footer class="footer">Pepsi All Rights Reserved Ketong @2023</footer>
+
+    <div class="icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+
+    <script>
+        function Myfunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
